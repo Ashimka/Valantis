@@ -1,0 +1,126 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.content {
+  display: flex;
+  gap: 0.5rem;
+}
+.filter {
+  height: 300px;
+  flex: 3;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+.products,
+.loading {
+  flex: 9;
+}
+.loading-header {
+  height: 40px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.loading-main {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.loading-item {
+  background-color: #f0f0f0;
+  width: 300px;
+  height: 200px;
+}
+table {
+  border: 1px solid #b3adad;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table th {
+  border: 1px solid #b3adad;
+  padding: 5px;
+  background: #f0f0f0;
+  color: #313030;
+}
+table td {
+  border: 1px solid #b3adad;
+  text-align: left;
+  padding: 10px;
+  background: #ffffff;
+  color: #313030;
+}
+.pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.pagination-btn {
+  cursor: pointer;
+}
+.pagination-btn:hover {
+  background-color: aquamarine;
+}
+
+select {
+  width: 320px;
+  white-space: pre-wrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(240, 27%, 15%);
+}
+select::-ms-expand {
+  display: none;
+}
+select:focus {
+  outline: none;
+}
+.filter-btn {
+  margin-top: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.filter-btn > button {
+  padding: 0.2rem 0;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: none;
+  color: #f0f0f0;
+}
+.btn-clear {
+  background-color: hsl(0, 4%, 69%);
+}
+.btn-clear:hover {
+  background-color: hsl(0, 4%, 59%);
+}
+.btn-add {
+  background-color: hsl(271, 76%, 53%);
+}
+.btn-add:hover {
+  background-color: hsl(271, 76%, 43%);
+}
