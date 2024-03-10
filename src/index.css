@@ -12,10 +12,26 @@
   margin: 0;
   padding: 0;
 }
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
 
 .container {
   margin: 0 auto;
   padding: 1rem;
+}
+header {
+  background-color: hsl(271, 76%, 73%);
+  color: #f0f0f0;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.nav-link:hover {
+  color: hsl(0, 54%, 92%);
 }
 .content {
   display: flex;
