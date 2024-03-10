@@ -25,6 +25,11 @@ header {
   background-color: hsl(271, 76%, 73%);
   color: #f0f0f0;
 }
+.header-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
 .nav {
   display: flex;
   justify-content: center;
