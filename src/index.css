@@ -11,17 +11,28 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 a {
   color: #f0f0f0;
   text-decoration: none;
+}
+#root {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
 }
 
 .container {
   margin: 0 auto;
   padding: 1rem;
 }
-header {
+.header,
+.footer {
   background-color: hsl(271, 76%, 73%);
   color: #f0f0f0;
 }
@@ -35,8 +46,11 @@ header {
   justify-content: center;
   gap: 1rem;
 }
+.nav-link {
+  transition: color 0.4s ease;
+}
 .nav-link:hover {
-  color: hsl(0, 54%, 92%);
+  color: hsl(48, 3%, 30%);
 }
 .content {
   display: flex;
@@ -145,3 +159,21 @@ select:focus {
 .btn-add:hover {
   background-color: hsl(271, 76%, 43%);
 }
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer-title {
+  margin-bottom: 1rem;
+}
+.link-wrap {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 18px;
+}
+/* .link-wrap > a:hover {
+  color: hsl(48, 3%, 30%);
+} */
